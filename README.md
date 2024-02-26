@@ -1,3 +1,5 @@
-# Open Source at Astun- March 2023
+# Standing on the Shoulders of Giants
 
-See [astuntechnology.github.io/os-astun-talk](https://astuntechnology.github.io/os-astun-talk) for the live version of these slides
+A talk to AGI Scotland in Feburary 2024 on the synergies between open source and open standards.
+
+See [https://archaeogeek.github.io/agi-scot-2024/](https://archaeogeek.github.io/agi-scot-2024/) for the live version of these slides
