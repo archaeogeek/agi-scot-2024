@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Standing on the Shoulders of Giants</title>
+
+		<meta name="description" content="Standing on the Shoulders of Giants">
+		<meta name="author" content="Jo Cook | Astun Technology">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		
+		<!-- base theme -->
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- all Astun customisations -->
+		<link rel="stylesheet" href="custom/astun.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3 style="color:var(--astun-indigo)">Standing on the Shoulders of Giants</h3>
+					<p>
+						<small><a href="http://astuntechnology.com">Jo Cook | Astun Technology</a></small>
+					</p>
+					<aside class="notes">I'm Jo, I'm the Data Discoverability Lead at Astun Technology, and in this talk I'm going to be exploring synergies between open source technologies, open standards, and FAIR principles in geospatial solutions</aside>
+				</section>
+
+				<section>
+					<h3 style="color:var(--astun-blue)">(syn.er.gy)</h3>
+					<p>"The interaction or cooperation of two or more <span style="color:var(--astun-blue)">organizations, substances,</span> or <span style="color:var(--astun-blue)">other agents</span> to produce a combined effect greater than the sum of their separate effects."</p>
+					<small>Dates from the mid 17th century (denoting cooperation): from modern Latin synergia cooperation, from Greek sunergia, from sunergos, meaning <span style="color:var(--astun-blue)">‘working together’</span></small>
+					<aside class="notes">So what we're going to be talking about today can be summed up in two words "Together Work"</aside>
+				</section>
+
+				<section data-background-image="./images/xkcd.jpg" alt="XKCD" class="full" data-background-size="full">
+					<p class="box-left" style="background-color:var(--astun-teal);margin-top: 200px !important">In preparation for this talk, we conducted a survey on opinions about open source and open standards. </p>
+					<p class="fragment box-right" style="margin-top: 200px !important">We had 70 respondents in total. Thanks to everyone that participated!</p>
+					
+				</section>
+
+				<section data-background-image="./images/agenda.jpg" alt="OSS" class="full" data-background-size="full" data-background-opacity="0.75">
+					<p class="fragment box-left fade-in" style="background-color:var(--astun-teal);margin-top: 50px !important">Open Source and Open Standards</p>
+					<p class="fragment box-right fade-in" style="background-color:var(--astun-teal);margin-top: 50px !important">FAIR Principles</p>
+					<p class="fragment box-left fade-in" style="background-color:var(--astun-teal);margin-top: 200px !important">Real Life Examples</p>
+					<p class="fragment box-right fade-in" style="background-color:var(--astun-teal);margin-top: 200px !important">Benefits for Organisations</p>
+					<p class="fragment box-left fade-in" style="background-color:var(--astun-teal);margin-top: 350px !important">Benefits for the Wider Community</p>
+					<p class="fragment box-right fade-in" style="background-color:var(--astun-teal);margin-top: 350px !important">Why Re-inventing the Wheel is bad</p>
+				</section>
+
+				<section data-background-image="./images/enterprise-grade.png" alt="OSS" class="full" data-background-size="contain" data-background-opacity="0.75">
+					<h3 class="box" style="background-color:var(--astun-red)">Enterprise-grade software through community collaboration</h3>
+					<p class="fragment box-left fade-in" style="background-color:var(--astun-red);margin-top: 50px !important">Diverse Contributions</p>
+					<p class="fragment box-right fade-in" style="background-color:var(--astun-red);margin-top: 50px !important">Rapid Evolution</p>
+					<p class="fragment box-left fade-in" style="background-color:var(--astun-red);margin-top: 200px !important">Community Support</p>
+					<p class="fragment box-right fade-in" style="background-color:var(--astun-red);margin-top: 200px !important">Cost-Efficiency</p>
+					<aside class="notes">The power of open source in geospatial data and software is that it enables diverse contributions, rapid evolution, community support and cost-efficiency, reducing development costs and accelerating the delivery of solutions. We're tapping into a vast reservoir of collective knowledge, expertise and creativity from developers around the globe. Successful open source projects such as PostGIS, QGIS and Geoserver have matured into Enterprise-grade products through community collaboration.</aside>
+				</section>
+
+				<section>
+					<h3 class="box" style="background-color:var(--astun-red)">From our survey respondents</h3>
+					<div style="height:480px">
+					<canvas data-chart="bar">
+						Data, More, Less, Not Sure
+						Engagement with open source dev process, 70.2, 17.1, 12.7
+					</canvas>
+				</div>
+				</section>
+
+				<section>
+					<h3 class="box" style="background-color:var(--astun-red)">From our survey respondents</h3>
+					<div style="height:480px">
+					<canvas data-chart="bar">
+						<!--
+						{
+						"data": {
+							"labels":[
+						         "Cost",
+						         " Community",
+						         " License",
+						         " Choice",
+						         " Interoperability",
+						         " Customisation",
+						         " Scalability",
+						         " Bug Fixes",
+						         " Support",
+						         " Enterprise-level Features"
+					      	],
+						      "datasets":[
+						         {
+						            "data":[
+						               91,
+						               87,
+						               85,
+						               84,
+						               80,
+						               77,
+						               67,
+						               62,
+						               48,
+						               43
+						            ],
+						            "label":"Benefits of Open Source"
+						         }
+						      ]
+						   },
+						"options": {
+							"indexAxis": "y"
+						}
+						}
+						-->
+					</canvas>
+				</div>
+				</section>
+
+				<section data-background-image="./images/night-lights.jpg" alt="Night Lights" class="full" data-background-size="full" data-background-opacity="0.75">
+					<h3 class="box" style="background-color:var(--astun-red)">Seamless communication between systems and organisations</h3>
+					<p class="fragment box-left fade-in" style="background-color:var(--astun-teal);margin-top: 50px !important">Shared Language</p>
+					<p class="fragment box-right fade-in" style="background-color:var(--astun-teal);margin-top: 50px !important">Sustainability and Relevance</p>
+					<p class="fragment box-left fade-in" style="background-color:var(--astun-teal);margin-top: 200px !important">Collaborative Development</p>
+					<p class="fragment box-right fade-in" style="background-color:var(--astun-teal);margin-top: 200px !important">Adapt to Changing Needs</p>
+					<aside class="notes">Open Standards are vital in the geospatial industry, providing a shared language for data and applications, enabling seamless communication between different systems and organisations. Open standards ensure sustainability and relevance over time- collaborative development and maintenance means they are more likely to adapt to technological developments and changing needs. It's hard to imagine geospatial software these days that doesn't use OGC standards such as WFS and WMS.</aside>
+				</section>
+
+				<section>
+					<h3 class="box" style="background-color:var(--astun-red)">From our survey respondents</h3>
+					<div style="height:480px">
+					<canvas data-chart="bar">
+						Data, Important, Not Important, Not Sure
+						Importance of Open Standards, 84.8, 8.7, 6.5
+					</canvas>
+				</div>
+				</section>
+
+				<section data-background-image="./images/FAIR.png" alt="FAIR" class="full" data-background-size="contain" data-background-opacity="0.75">
+					<h3 class="box" style="background-color:var(--astun-indigo)">Convert the advantages of open source and open standards into real-world benefits</h3>
+					<aside class="notes">The principles of FAIR (Findability, Accessibility, Interoperability and Reusability) take the advantages of open source and open standards and convert them into real-world benefits. There's not a lot of point in doing the work to produce data and insights if no one can find it, understand and interpret it, or use it, and perhaps re-use it later. My area of Data Discoverability is all about enabling this- using standards-compliant metadata as the cornerstone of FAIR data.</aside>
+				</section>
+
+				<section>
+					<h3 class="box" style="background-color:var(--astun-red)">From our survey respondents</h3>
+					<div style="height:480px">
+					<canvas data-chart="bar">
+						Data, Interoperability, Consistency, Backwards Compliance
+						Top 3 Benefits of Open Standards, 86.7, 51.1, 43.3
+					</canvas>
+				</div>
+				</section>
+
+				<section data-background-image="./images/scotgov_distorted.png" alt="SSDI" class="full" data-background-size="contain" data-background-opacity="1" data-background-gradient="linear-gradient(to bottom, #160e36de, #0ea7b3de)">
+					<h3 class="box" style="background-color:var(--astun-indigo)">Astun's Data Disoverability Work</h3>
+					<h4 class="fragment box" style="background-color:var(--astun-indigo)">Metadata and Data Management based on open source and open standards</h4>
+					<aside class="notes">We provide metadata catalogues based on GeoNetwork Open Source for organisations ranging from local authorities, to Scottish Government, Ordnance Survey, and Natural Resources Wales. We support a range of metadata standards, but tend to advocate for using UK Gemini as it's recommended by Government and is interoperable with many other standards such as INSPIRE because it's based on a long-established international standard (ISO19139). We can also be agile and respond quickly to emerging best practice such as the Government-mandated use of DCAT</aside>
+				</section>
+
+				<section data-background-image="./images/help.jpg" alt="HELP" class="full" data-background-size="full" data-background-opacity="0.75">
+					<h3 class="box" style="background-color:var(--astun-indigo)">Better Software</h3>
+					<p class="fragment box-left fade-in" style="background-color:var(--astun-indigo);margin-top: 50px !important">Publication Workflow</p>
+					<p class="fragment box-right fade-in" style="background-color:var(--astun-indigo);margin-top: 50px !important">Documentation Sprints</p>
+					<p class="fragment box-left fade-in" style="background-color:var(--astun-indigo);margin-top: 200px !important">Bug Fixes</p>
+					<p class="fragment box-right fade-in" style="background-color:var(--astun-indigo);margin-top: 200px !important">Data Quality Enhancements</p>
+					<aside class="notes">Astun alone have contributed to a number of fixes and enhancements to GeoNetwork. These include improvements to the publication workflow in GeoNetwork and  improvements to the display of INSPIRE conformity. We've also been involved in code and documentation sprints. With Scottish Government we've contributed some bug fixes, and better documentation, and have made it much easier to record data quality. Not only can we feed these improvements to all of our customers, but anyone in the UK that uses GeoNetwork can also benefit from them. Of course we also benefit from enhancements made by developers all over the world!</aside>
+				</section>
+
+				<section data-background-image="./images/holding-hands.jpg" alt="Holding Hands" class="full" data-background-size="full" data-background-opacity="0.75">
+					<h3 class="box" style="background-color:var(--astun-indigo)">Better Standards</h3>
+					<aside class="notes">The benefit of an open and accessible standard is that you can talk to the people responsible. Our metadata work has resulted in additional elements in UK Gemini that make it easier to use, and recently our work with Natural Resources Wales has led to validation improvements in Medin. We feed these enhancements back to all our customers and make them available openly on GitHub for anyone to use. I'm also on the Gemini Working Group and we've recently moved our development process to GitHub to make it even more open and accessible.</aside>
+				</section>
+
+				<section>
+					<h3 class="box" style="background-color:var(--astun-red)">From our survey respondents</h3>
+					<q class="fragment box-left fade-in">Interoperability is key for long-term sustainability</q>
+					<q class="fragment box-right fade-in" style="background-color:var(--astun-red)">There is no "them" in open source</q>
+					<aside class="notes">Some nice quotes from our survey</aside>
+				</section>
+
+				<section data-background-image="./images/facepalm.jpg" alt="Face-Palm" class="full" data-background-size="full">
+					<h3 class="box" style="background-color:var(--astun-blue)">Re-inventing the Wheel</h3>
+					<p class="fragment box-left fade-in" style="background-color:var(--astun-blue);margin-top: 50px !important">Don't do it!</p>
+					<p class="fragment box-right fade-in" style="background-color:var(--astun-blue);margin-top: 50px !important">It's a waste of time and money</p>
+					<p class="fragment box-left fade-in" style="background-color:var(--astun-blue);margin-top: 200px !important">It stops you benefiting from other people's expertise</p>
+					<p class="fragment box-right fade-in" style="background-color:var(--astun-blue);margin-top: 200px !important">It stops other people benefiting from yours</p>
+					<aside class="notes">Building from scratch when you could iterate on something that already exists is not an efficient use of time or resources, and prevents you from benefiting from other people's expertise. I've sat through multiple presentations over the last few years in which some very bright people described what was in effect a metadata catalogue. Last week I saw a blog post from a government department that I won't name, where they re-invented a data warehouse and a web GIS. If all of these very bright people had brought their skills to bear improving existing solutions, how much better would that have been for everyone?</aside>
+				</section>
+
+				
+
+				<section data-background-image="./images/questions.jpg" alt="Questions" class="full" data-background-size="full" data-background-opacity="0.75">
+					<h3  class="box" style="background-color:var(--astun-red)">Thank you for listening 🙏 <br /> Any questions?</h3>
+				</section>
+
+
+
+				
+
+			</div>
+
+			<div class="fe-persistent-header">
+ 				<img src="./images/AstunSmallLogo.png"/>
+				<p style="color: var(--astun-red);font-weight:600">Experts in Place</p>
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<!-- Chart plugin -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chart/plugin.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+				pdfMaxPagesPerSlide: 1,
+				pdfSeparateFragments: false,
+				slideNumber: "c/t",
+				chart : {
+					defaults: {
+								color: '#160e36de', // color of labels
+								scale: {
+									beginAtZero: true,
+									ticks: { stepSize: 10 },
+									grid: { display: false } , // color of grid lines
+								},
+								font: {
+									family: "'Lato', 'Helvetica', 'sans-serif'"
+								}
+							},
+					bar: { backgroundColor: ["#0ea7b3de"]},
+				  },
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealChart ]
+			});
+
+			//Reveal.configure({ showNotes: 'separate-page' });
+
+		</script>
+
+	</body>
+</html>
